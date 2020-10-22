@@ -35,6 +35,7 @@ TcpSocket* TcpServer::Accept(int& r, int timeout) {
         cout << "select error\n";
         // select出错...
     }
+    return nullptr;
 }
 
 TcpServer::~TcpServer() {

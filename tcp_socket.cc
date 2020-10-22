@@ -80,6 +80,7 @@ string TcpSocket::Recv(int timeout) {
         // select出错...
         cout << "select error\n";
     }
+    return nullptr;
 }
 
 TcpSocket::~TcpSocket() {
